@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DIN Pro Condensed Bold.otf">
+            <string>DINPro-CondensedBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SouvenirView" customModule="Souvenir" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomShineCircleImageView" destination="PjL-Up-ftM" id="O5L-OC-iJG"/>
+                <outlet property="bottomStarImageView" destination="ndU-3f-R3a" id="cO8-jO-03Q"/>
+                <outlet property="envelopeImageView" destination="bEd-In-lYX" id="K6k-U8-pCk"/>
+                <outlet property="heightEnvelopeImageView" destination="nWQ-sA-pSU" id="7Jd-iz-x4F"/>
+                <outlet property="heightShineCircleImageView" destination="LUO-gS-5mL" id="dFu-vd-MUj"/>
+                <outlet property="heightShineStarImageView" destination="lGq-IE-7AL" id="gRh-5p-XRY"/>
+                <outlet property="priceLabel" destination="0lv-2w-cwG" id="TVE-0S-J6N"/>
+                <outlet property="shineCircleImageView" destination="flP-DU-Sl4" id="QzH-8y-aPM"/>
+                <outlet property="shineStarImageView" destination="iH7-lN-HHy" id="rfi-jV-bDu"/>
+                <outlet property="shineTopImageView" destination="SXz-Zc-COf" id="C70-2J-toq"/>
+                <outlet property="subtitleLabel" destination="gga-Qn-vgv" id="fzH-B9-kjk"/>
+                <outletCollection property="horizontalAlignShineStarsImageViews" destination="TIM-qA-pzb" collectionClass="NSMutableArray" id="U2u-cG-h8F"/>
+                <outletCollection property="horizontalAlignShineStarsImageViews" destination="gC3-7R-S1c" collectionClass="NSMutableArray" id="no1-Bo-Ehd"/>
+                <outletCollection property="horizontalAlignShineStarsImageViews" destination="r8K-DU-WRw" collectionClass="NSMutableArray" id="vaE-X0-ez4"/>
+                <outletCollection property="horizontalAlignShineStarsImageViews" destination="GqJ-lr-G50" collectionClass="NSMutableArray" id="UDt-4B-zWJ"/>
+                <outletCollection property="verticalAlignShineStarsImageViews" destination="Ql1-YJ-65m" collectionClass="NSMutableArray" id="m43-Se-Rvy"/>
+                <outletCollection property="verticalAlignShineStarsImageViews" destination="w3X-cI-2K8" collectionClass="NSMutableArray" id="84U-p1-L9C"/>
+                <outletCollection property="verticalAlignShineStarsImageViews" destination="ekF-Zc-SHc" collectionClass="NSMutableArray" id="fkS-mI-p87"/>
+                <outletCollection property="verticalAlignShineStarsImageViews" destination="unB-ls-EJh" collectionClass="NSMutableArray" id="U4T-el-5Fm"/>
+                <outletCollection property="shineStarsImageViews" destination="oO3-Zh-rFo" collectionClass="NSMutableArray" id="TRo-7f-nlM"/>
+                <outletCollection property="shineStarsImageViews" destination="ZZv-bp-HYz" collectionClass="NSMutableArray" id="T0p-I2-HC2"/>
+                <outletCollection property="shineStarsImageViews" destination="lp9-tM-uSg" collectionClass="NSMutableArray" id="WyE-b3-jBd"/>
+                <outletCollection property="shineStarsImageViews" destination="xQk-ER-EPH" collectionClass="NSMutableArray" id="EKl-rb-bzg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envelope" translatesAutoresizingMaskIntoConstraints="NO" id="bEd-In-lYX">
+                    <rect key="frame" x="139" y="246" width="96" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="bEd-In-lYX" secondAttribute="height" multiplier="4:3" id="JhD-W5-8zC"/>
+                        <constraint firstAttribute="height" constant="72" id="nWQ-sA-pSU"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shineCircle" translatesAutoresizingMaskIntoConstraints="NO" id="flP-DU-Sl4">
+                    <rect key="frame" x="116" y="203" width="143" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="LUO-gS-5mL"/>
+                        <constraint firstAttribute="width" secondItem="flP-DU-Sl4" secondAttribute="height" multiplier="143:39" id="Ydq-W7-HCe"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medium Souvenir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gga-Qn-vgv" customClass="EdgeInsetLabel" customModule="Souvenir" customModuleProvider="target">
+                    <rect key="frame" x="86" y="311.5" width="204" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="DINPro-CondensedBold" family="DIN Pro" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="leftTextInset">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="rightTextInset">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="topTextInset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="bottomTextInset">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50 EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lv-2w-cwG">
+                    <rect key="frame" x="167.5" y="371" width="42" height="21"/>
+                    <fontDescription key="fontDescription" name="DINPro-CondensedBold" family="DIN Pro" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shineTop" translatesAutoresizingMaskIntoConstraints="NO" id="SXz-Zc-COf">
+                    <rect key="frame" x="185" y="191" width="4" height="28"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shineStar" translatesAutoresizingMaskIntoConstraints="NO" id="iH7-lN-HHy" userLabel="Middle Shine Star Image View">
+                    <rect key="frame" x="170" y="191" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="iH7-lN-HHy" secondAttribute="height" multiplier="1:1" id="igV-sI-IhQ"/>
+                        <constraint firstAttribute="height" constant="35" id="lGq-IE-7AL"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shineStar" translatesAutoresizingMaskIntoConstraints="NO" id="oO3-Zh-rFo" userLabel="Shine Stars Image Views">
+                    <rect key="frame" x="177" y="272" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="oO3-Zh-rFo" secondAttribute="height" multiplier="1:1" id="pZF-qm-53d"/>
+                        <constraint firstAttribute="height" constant="20" id="u1r-j6-Yk8"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shineStar" translatesAutoresizingMaskIntoConstraints="NO" id="ZZv-bp-HYz" userLabel="Shine Stars Image Views">
+                    <rect key="frame" x="177" y="272" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ZZv-bp-HYz" secondAttribute="height" multiplier="1:1" id="bOJ-bf-x63"/>
+                        <constraint firstAttribute="height" constant="20" id="fsx-jH-5pS"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shineStar" translatesAutoresizingMaskIntoConstraints="NO" id="lp9-tM-uSg" userLabel="Shine Stars Image Views">
+                    <rect key="frame" x="177" y="272" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="ciF-FA-t8f"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shineStar" translatesAutoresizingMaskIntoConstraints="NO" id="xQk-ER-EPH" userLabel="Shine Stars Image Views">
+                    <rect key="frame" x="177" y="272" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="PWj-EK-OLl"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xQk-ER-EPH" firstAttribute="width" secondItem="xQk-ER-EPH" secondAttribute="height" multiplier="1:1" id="7kJ-gK-yZZ"/>
+                <constraint firstItem="SXz-Zc-COf" firstAttribute="centerX" secondItem="bEd-In-lYX" secondAttribute="centerX" id="F3p-9g-WWX"/>
+                <constraint firstItem="iH7-lN-HHy" firstAttribute="centerX" secondItem="bEd-In-lYX" secondAttribute="centerX" id="FV0-t2-MZs"/>
+                <constraint firstItem="xQk-ER-EPH" firstAttribute="centerX" secondItem="bEd-In-lYX" secondAttribute="centerX" id="GqJ-lr-G50"/>
+                <constraint firstItem="0lv-2w-cwG" firstAttribute="centerX" secondItem="gga-Qn-vgv" secondAttribute="centerX" id="Ib9-RF-ItO"/>
+                <constraint firstItem="gga-Qn-vgv" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LBV-EY-knc"/>
+                <constraint firstItem="lp9-tM-uSg" firstAttribute="width" secondItem="lp9-tM-uSg" secondAttribute="height" multiplier="1:1" id="MHw-WH-nHE"/>
+                <constraint firstItem="gga-Qn-vgv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Mj6-cq-o0i"/>
+                <constraint firstItem="bEd-In-lYX" firstAttribute="centerX" secondItem="gga-Qn-vgv" secondAttribute="centerX" id="N9g-Pz-QlS"/>
+                <constraint firstItem="bEd-In-lYX" firstAttribute="top" secondItem="flP-DU-Sl4" secondAttribute="bottom" constant="4" id="PjL-Up-ftM"/>
+                <constraint firstItem="xQk-ER-EPH" firstAttribute="centerY" secondItem="bEd-In-lYX" secondAttribute="centerY" id="Ql1-YJ-65m"/>
+                <constraint firstItem="oO3-Zh-rFo" firstAttribute="centerX" secondItem="bEd-In-lYX" secondAttribute="centerX" id="TIM-qA-pzb"/>
+                <constraint firstItem="0lv-2w-cwG" firstAttribute="top" secondItem="gga-Qn-vgv" secondAttribute="bottom" constant="15.5" id="UDD-fu-xhI"/>
+                <constraint firstItem="ZZv-bp-HYz" firstAttribute="centerY" secondItem="bEd-In-lYX" secondAttribute="centerY" id="ekF-Zc-SHc"/>
+                <constraint firstItem="bEd-In-lYX" firstAttribute="top" secondItem="SXz-Zc-COf" secondAttribute="bottom" constant="27" id="fAr-KO-Z1A"/>
+                <constraint firstItem="ZZv-bp-HYz" firstAttribute="centerX" secondItem="bEd-In-lYX" secondAttribute="centerX" id="gC3-7R-S1c"/>
+                <constraint firstItem="gga-Qn-vgv" firstAttribute="top" secondItem="bEd-In-lYX" secondAttribute="bottom" constant="-7" id="mo9-RQ-ZNz"/>
+                <constraint firstItem="bEd-In-lYX" firstAttribute="top" secondItem="iH7-lN-HHy" secondAttribute="bottom" constant="20" id="ndU-3f-R3a"/>
+                <constraint firstItem="lp9-tM-uSg" firstAttribute="centerX" secondItem="bEd-In-lYX" secondAttribute="centerX" id="r8K-DU-WRw"/>
+                <constraint firstItem="flP-DU-Sl4" firstAttribute="centerX" secondItem="bEd-In-lYX" secondAttribute="centerX" id="sRk-t9-MAQ"/>
+                <constraint firstItem="oO3-Zh-rFo" firstAttribute="centerY" secondItem="bEd-In-lYX" secondAttribute="centerY" id="unB-ls-EJh"/>
+                <constraint firstItem="lp9-tM-uSg" firstAttribute="centerY" secondItem="bEd-In-lYX" secondAttribute="centerY" id="w3X-cI-2K8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="66.5" y="-84.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="envelope" width="142" height="106"/>
+        <image name="shineCircle" width="145" height="41"/>
+        <image name="shineStar" width="43" height="41"/>
+        <image name="shineTop" width="4" height="28"/>
+    </resources>
+</document>

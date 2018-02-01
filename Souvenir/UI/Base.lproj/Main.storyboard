@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DIN Pro Condensed Bold.otf">
+            <string>DINPro-CondensedBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Souvenir" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="fGZ-X7-qd3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWn-XR-lKU" userLabel="Souvenir Container">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="611"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tCA-EW-4Hd" customClass="SouvenirView" customModule="Souvenir" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="173" width="345" height="345"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="tCA-EW-4Hd" secondAttribute="height" multiplier="1:1" id="eOB-QW-Gw7"/>
+                                        </constraints>
+                                    </view>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="OVT-dp-3h2">
+                                        <rect key="frame" x="168" y="564" width="39" height="37"/>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tCA-EW-4Hd" secondAttribute="trailing" constant="15" id="eQv-WW-h5i"/>
+                                    <constraint firstItem="OVT-dp-3h2" firstAttribute="centerX" secondItem="pWn-XR-lKU" secondAttribute="centerX" id="kKI-iv-etN"/>
+                                    <constraint firstItem="tCA-EW-4Hd" firstAttribute="leading" secondItem="pWn-XR-lKU" secondAttribute="leading" constant="15" id="uFC-Fv-ha7"/>
+                                    <constraint firstItem="tCA-EW-4Hd" firstAttribute="centerY" secondItem="pWn-XR-lKU" secondAttribute="centerY" constant="40" id="vcS-Pc-tqU"/>
+                                    <constraint firstAttribute="bottom" secondItem="OVT-dp-3h2" secondAttribute="bottom" constant="10" id="wrd-xK-kMU"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khq-fo-l60">
+                                <rect key="frame" x="0.0" y="611" width="375" height="56"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="9XK-3n-dGD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINPro-CondensedBold" family="DIN Pro" pointSize="17"/>
+                                <state key="normal" title="SEND SMALL SOUVENIR">
+                                    <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bottomButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cdy-b3-a6J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pWn-XR-lKU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="57y-B0-OMI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pWn-XR-lKU" secondAttribute="trailing" id="KsV-Cm-At0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fGZ-X7-qd3" secondAttribute="trailing" id="UfR-eZ-bZb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="khq-fo-l60" secondAttribute="bottom" id="VmM-Pk-msu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fGZ-X7-qd3" secondAttribute="bottom" id="WTx-dE-I3B"/>
+                            <constraint firstItem="khq-fo-l60" firstAttribute="top" secondItem="pWn-XR-lKU" secondAttribute="bottom" id="cfE-em-H79"/>
+                            <constraint firstItem="fGZ-X7-qd3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lcj-4P-ZsM"/>
+                            <constraint firstItem="pWn-XR-lKU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mP7-M8-jg4"/>
+                            <constraint firstItem="khq-fo-l60" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qj7-CT-i7d"/>
+                            <constraint firstItem="fGZ-X7-qd3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rez-7p-Dq2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="khq-fo-l60" secondAttribute="trailing" id="teq-tc-6wk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="fGZ-X7-qd3" id="k0n-0Y-aVi"/>
+                        <outlet property="bottomButton" destination="khq-fo-l60" id="WTf-cw-yM3"/>
+                        <outlet property="pageControl" destination="OVT-dp-3h2" id="QSj-kA-nFD"/>
+                        <outlet property="souvenirView" destination="tCA-EW-4Hd" id="PsW-cC-3WC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="360" height="640"/>
+    </resources>
+</document>
