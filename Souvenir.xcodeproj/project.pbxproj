@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01D5ACE752B17AB79E958200 /* Pods_Souvenir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85130997D76FD05291B1B8E8 /* Pods_Souvenir.framework */; };
+		1113B7C2202C829A0072DF49 /* CardPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113B7C1202C829A0072DF49 /* CardPickerViewController.swift */; };
+		1113B7C4202C84DD0072DF49 /* .rswiftignore in Resources */ = {isa = PBXBuildFile; fileRef = 1113B7C3202C84DD0072DF49 /* .rswiftignore */; };
+		1113B7C7202C85CD0072DF49 /* CardPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1113B7C6202C85CD0072DF49 /* CardPicker.storyboard */; };
+		1113B7CA202C86350072DF49 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113B7C9202C86350072DF49 /* R.generated.swift */; };
+		1113B7CD202C878A0072DF49 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113B7CC202C878A0072DF49 /* TransitionManager.swift */; };
+		1113B7CF202C88AE0072DF49 /* SlideTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113B7CE202C88AD0072DF49 /* SlideTransitionAnimator.swift */; };
+		1113B7D2202C8A360072DF49 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113B7D1202C8A360072DF49 /* BaseViewController.swift */; };
+		1113B7D4202C8F9D0072DF49 /* FramePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113B7D3202C8F9D0072DF49 /* FramePresentationController.swift */; };
+		1113B7D6202CA3600072DF49 /* CustomFrameTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113B7D5202CA3600072DF49 /* CustomFrameTransitionManager.swift */; };
+		1113B7DC202CADC30072DF49 /* CardPickerViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113B7DB202CADC30072DF49 /* CardPickerViewPresenter.swift */; };
+		1113B7DF202CADF60072DF49 /* CardPickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113B7DE202CADF60072DF49 /* CardPickerModel.swift */; };
+		1113B7E1202CAE110072DF49 /* CardPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113B7E0202CAE110072DF49 /* CardPickerView.swift */; };
 		11398FB2201F6FEF00792D31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11398FB1201F6FEF00792D31 /* AppDelegate.swift */; };
 		11398FB4201F6FEF00792D31 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11398FB3201F6FEF00792D31 /* MainViewController.swift */; };
 		11398FB7201F6FEF00792D31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11398FB5201F6FEF00792D31 /* Main.storyboard */; };
@@ -14,6 +27,7 @@
 		11398FBC201F6FF000792D31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11398FBA201F6FF000792D31 /* LaunchScreen.storyboard */; };
 		11398FC7201F6FF000792D31 /* SouvenirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11398FC6201F6FF000792D31 /* SouvenirTests.swift */; };
 		11398FD7201F76A700792D31 /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11398FD6201F76A700792D31 /* MainViewPresenter.swift */; };
+		1146639D202A331900C1E2B1 /* CardEditableStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146639C202A331900C1E2B1 /* CardEditableStorage.swift */; };
 		11633B9120204D8000E6379F /* DIN Pro Condensed Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 11633B9020204D8000E6379F /* DIN Pro Condensed Bold.otf */; };
 		11633B9720204E5200E6379F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11633B9420204E5200E6379F /* UIColor+Hex.swift */; };
 		11633B9820204E5200E6379F /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11633B9620204E5200E6379F /* UIImage+Color.swift */; };
@@ -28,6 +42,27 @@
 		1173A9B12023575B000CA598 /* SouvenirType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1173A9B02023575B000CA598 /* SouvenirType.swift */; };
 		1173A9B320235773000CA598 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1173A9B220235773000CA598 /* Currency.swift */; };
 		1175E7482020F509003D577E /* EdgeInsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1175E7472020F509003D577E /* EdgeInsetLabel.swift */; };
+		11B3B2DC202E067700054367 /* CardDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2DB202E067700054367 /* CardDescription.swift */; };
+		11B3B2DE202E069900054367 /* CardConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2DD202E069900054367 /* CardConst.swift */; };
+		11B3B2E0202E06CB00054367 /* CardDataStorageDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2DF202E06CB00054367 /* CardDataStorageDescription.swift */; };
+		11B3B2E2202E06F900054367 /* TestCardStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2E1202E06F900054367 /* TestCardStorage.swift */; };
+		11C620C4202CDC5C00BEB2BB /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620C3202CDC5C00BEB2BB /* CardCell.swift */; };
+		11C620D7202DA52000BEB2BB /* BaseCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620CA202DA52000BEB2BB /* BaseCellModel.swift */; };
+		11C620D8202DA52000BEB2BB /* CellModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620CB202DA52000BEB2BB /* CellModelInterface.swift */; };
+		11C620D9202DA52000BEB2BB /* DescribeReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620CC202DA52000BEB2BB /* DescribeReusable.swift */; };
+		11C620DA202DA52000BEB2BB /* HeightConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620CD202DA52000BEB2BB /* HeightConfigurable.swift */; };
+		11C620DB202DA52000BEB2BB /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620CF202DA52000BEB2BB /* NibLoadable.swift */; };
+		11C620DC202DA52000BEB2BB /* NibReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620D0202DA52000BEB2BB /* NibReusable.swift */; };
+		11C620DD202DA52000BEB2BB /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620D1202DA52000BEB2BB /* Reusable.swift */; };
+		11C620DE202DA52000BEB2BB /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620D2202DA52000BEB2BB /* UITableView+Reusable.swift */; };
+		11C620DF202DA52000BEB2BB /* UITableViewCell+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620D3202DA52000BEB2BB /* UITableViewCell+Reusable.swift */; };
+		11C620E0202DA52000BEB2BB /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620D5202DA52000BEB2BB /* BaseCell.swift */; };
+		11C620E1202DA52000BEB2BB /* CellInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620D6202DA52000BEB2BB /* CellInterface.swift */; };
+		11C620E3202DA5C700BEB2BB /* AnyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620E2202DA5C700BEB2BB /* AnyCell.swift */; };
+		11C620E5202DA83A00BEB2BB /* AddNewCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620E4202DA83A00BEB2BB /* AddNewCardCell.swift */; };
+		11C620E7202DA8CB00BEB2BB /* AddNewCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11C620E6202DA8CB00BEB2BB /* AddNewCardCell.xib */; };
+		11F8A59A202DB92E009A364C /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F8A599202DB92E009A364C /* CardCell.xib */; };
+		387B73158025AF2C377C44F5 /* Pods_SouvenirTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541746EFE9B240B5E0CC0A90 /* Pods_SouvenirTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +76,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1113B7C1202C829A0072DF49 /* CardPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPickerViewController.swift; sourceTree = "<group>"; };
+		1113B7C3202C84DD0072DF49 /* .rswiftignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .rswiftignore; sourceTree = "<group>"; };
+		1113B7C6202C85CD0072DF49 /* CardPicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardPicker.storyboard; sourceTree = "<group>"; };
+		1113B7C9202C86350072DF49 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		1113B7CC202C878A0072DF49 /* TransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		1113B7CE202C88AD0072DF49 /* SlideTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTransitionAnimator.swift; sourceTree = "<group>"; };
+		1113B7D1202C8A360072DF49 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1113B7D3202C8F9D0072DF49 /* FramePresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramePresentationController.swift; sourceTree = "<group>"; };
+		1113B7D5202CA3600072DF49 /* CustomFrameTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFrameTransitionManager.swift; sourceTree = "<group>"; };
+		1113B7DB202CADC30072DF49 /* CardPickerViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPickerViewPresenter.swift; sourceTree = "<group>"; };
+		1113B7DE202CADF60072DF49 /* CardPickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPickerModel.swift; sourceTree = "<group>"; };
+		1113B7E0202CAE110072DF49 /* CardPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPickerView.swift; sourceTree = "<group>"; };
 		11398FAE201F6FEF00792D31 /* Souvenir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Souvenir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11398FB1201F6FEF00792D31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11398FB3201F6FEF00792D31 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +99,7 @@
 		11398FC6201F6FF000792D31 /* SouvenirTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouvenirTests.swift; sourceTree = "<group>"; };
 		11398FC8201F6FF000792D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11398FD6201F76A700792D31 /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
+		1146639C202A331900C1E2B1 /* CardEditableStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEditableStorage.swift; sourceTree = "<group>"; };
 		11633B9020204D8000E6379F /* DIN Pro Condensed Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN Pro Condensed Bold.otf"; sourceTree = "<group>"; };
 		11633B9420204E5200E6379F /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		11633B9620204E5200E6379F /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
@@ -66,6 +114,32 @@
 		1173A9B02023575B000CA598 /* SouvenirType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouvenirType.swift; sourceTree = "<group>"; };
 		1173A9B220235773000CA598 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		1175E7472020F509003D577E /* EdgeInsetLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInsetLabel.swift; sourceTree = "<group>"; };
+		11B3B2DB202E067700054367 /* CardDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDescription.swift; sourceTree = "<group>"; };
+		11B3B2DD202E069900054367 /* CardConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardConst.swift; sourceTree = "<group>"; };
+		11B3B2DF202E06CB00054367 /* CardDataStorageDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDataStorageDescription.swift; sourceTree = "<group>"; };
+		11B3B2E1202E06F900054367 /* TestCardStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCardStorage.swift; sourceTree = "<group>"; };
+		11C620C3202CDC5C00BEB2BB /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		11C620CA202DA52000BEB2BB /* BaseCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCellModel.swift; sourceTree = "<group>"; };
+		11C620CB202DA52000BEB2BB /* CellModelInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModelInterface.swift; sourceTree = "<group>"; };
+		11C620CC202DA52000BEB2BB /* DescribeReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescribeReusable.swift; sourceTree = "<group>"; };
+		11C620CD202DA52000BEB2BB /* HeightConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeightConfigurable.swift; sourceTree = "<group>"; };
+		11C620CF202DA52000BEB2BB /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		11C620D0202DA52000BEB2BB /* NibReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibReusable.swift; sourceTree = "<group>"; };
+		11C620D1202DA52000BEB2BB /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		11C620D2202DA52000BEB2BB /* UITableView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		11C620D3202DA52000BEB2BB /* UITableViewCell+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Reusable.swift"; sourceTree = "<group>"; };
+		11C620D5202DA52000BEB2BB /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		11C620D6202DA52000BEB2BB /* CellInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellInterface.swift; sourceTree = "<group>"; };
+		11C620E2202DA5C700BEB2BB /* AnyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCell.swift; sourceTree = "<group>"; };
+		11C620E4202DA83A00BEB2BB /* AddNewCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCardCell.swift; sourceTree = "<group>"; };
+		11C620E6202DA8CB00BEB2BB /* AddNewCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewCardCell.xib; sourceTree = "<group>"; };
+		11F8A599202DB92E009A364C /* CardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+		541746EFE9B240B5E0CC0A90 /* Pods_SouvenirTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SouvenirTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85130997D76FD05291B1B8E8 /* Pods_Souvenir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Souvenir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B763A36689804EA3CCA3037 /* Pods-SouvenirTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SouvenirTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SouvenirTests/Pods-SouvenirTests.debug.xcconfig"; sourceTree = "<group>"; };
+		97598764451077E0E06AF986 /* Pods-Souvenir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Souvenir.release.xcconfig"; path = "Pods/Target Support Files/Pods-Souvenir/Pods-Souvenir.release.xcconfig"; sourceTree = "<group>"; };
+		B3EBC10A8D60CCCE8B684BFF /* Pods-SouvenirTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SouvenirTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SouvenirTests/Pods-SouvenirTests.release.xcconfig"; sourceTree = "<group>"; };
+		B93ED1445E9998F79CA65219 /* Pods-Souvenir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Souvenir.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Souvenir/Pods-Souvenir.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D5ACE752B17AB79E958200 /* Pods_Souvenir.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,18 +155,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				387B73158025AF2C377C44F5 /* Pods_SouvenirTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1113B7C8202C86350072DF49 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1113B7C9202C86350072DF49 /* R.generated.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1113B7CB202C87790072DF49 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				1113B7CC202C878A0072DF49 /* TransitionManager.swift */,
+				1113B7D5202CA3600072DF49 /* CustomFrameTransitionManager.swift */,
+				1113B7CE202C88AD0072DF49 /* SlideTransitionAnimator.swift */,
+				1113B7D3202C8F9D0072DF49 /* FramePresentationController.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		1113B7D0202C8A290072DF49 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1113B7D1202C8A360072DF49 /* BaseViewController.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		1113B7D9202CADA50072DF49 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1113B7DB202CADC30072DF49 /* CardPickerViewPresenter.swift */,
+				1113B7E0202CAE110072DF49 /* CardPickerView.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1113B7DA202CADAF0072DF49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11C620C2202CDC1100BEB2BB /* Cells */,
+				1113B7C1202C829A0072DF49 /* CardPickerViewController.swift */,
+				1113B7C6202C85CD0072DF49 /* CardPicker.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1113B7DD202CADE70072DF49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1113B7DE202CADF60072DF49 /* CardPickerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		11398FA5201F6FEF00792D31 = {
 			isa = PBXGroup;
 			children = (
+				1113B7C3202C84DD0072DF49 /* .rswiftignore */,
 				11398FB0201F6FEF00792D31 /* Souvenir */,
 				11398FC5201F6FF000792D31 /* SouvenirTests */,
 				11398FAF201F6FEF00792D31 /* Products */,
+				5DB17BD7167C723769CE48AE /* Pods */,
+				E83947C8D8867EAF8A3719C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,10 +241,12 @@
 			isa = PBXGroup;
 			children = (
 				11633B9E2020508B00E6379F /* General */,
+				1146639B202A330500C1E2B1 /* Storage */,
 				11398FD3201F765B00792D31 /* Screen */,
 				11398FD2201F70EB00792D31 /* UI */,
 				11633BA82020591700E6379F /* CustomUI */,
 				11633B9220204E2000E6379F /* Extensions */,
+				1113B7C8202C86350072DF49 /* Resources */,
 				11398FD1201F70C700792D31 /* Supporting Files */,
 			);
 			path = Souvenir;
@@ -141,6 +276,8 @@
 		11398FD2201F70EB00792D31 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				11C620C7202DA51300BEB2BB /* TableMVC */,
+				1113B7CB202C87790072DF49 /* Transitions */,
 				11633BA3202058C000E6379F /* SouvenirView */,
 				11398FB5201F6FEF00792D31 /* Main.storyboard */,
 			);
@@ -151,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				11398FD8201F76AA00792D31 /* Main */,
+				1146639E202A39A200C1E2B1 /* CardPicker */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -180,6 +318,28 @@
 				11398FD4201F767600792D31 /* View */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		1146639B202A330500C1E2B1 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				11B3B2DB202E067700054367 /* CardDescription.swift */,
+				11B3B2DD202E069900054367 /* CardConst.swift */,
+				11B3B2DF202E06CB00054367 /* CardDataStorageDescription.swift */,
+				1146639C202A331900C1E2B1 /* CardEditableStorage.swift */,
+				11B3B2E1202E06F900054367 /* TestCardStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		1146639E202A39A200C1E2B1 /* CardPicker */ = {
+			isa = PBXGroup;
+			children = (
+				1113B7DD202CADE70072DF49 /* Model */,
+				1113B7D9202CADA50072DF49 /* Presenter */,
+				1113B7DA202CADAF0072DF49 /* View */,
+			);
+			path = CardPicker;
 			sourceTree = "<group>";
 		};
 		11633B8F20204D6D00E6379F /* Fonts */ = {
@@ -261,6 +421,7 @@
 		11633BA82020591700E6379F /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				1113B7D0202C8A290072DF49 /* UIViewController */,
 				1175E7462020F4F8003D577E /* UILabel */,
 				11633BA92020592300E6379F /* UIView */,
 			);
@@ -293,6 +454,88 @@
 			path = UILabel;
 			sourceTree = "<group>";
 		};
+		11C620C2202CDC1100BEB2BB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				11C620C3202CDC5C00BEB2BB /* CardCell.swift */,
+				11F8A599202DB92E009A364C /* CardCell.xib */,
+				11C620E4202DA83A00BEB2BB /* AddNewCardCell.swift */,
+				11C620E6202DA8CB00BEB2BB /* AddNewCardCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		11C620C7202DA51300BEB2BB /* TableMVC */ = {
+			isa = PBXGroup;
+			children = (
+				11C620E2202DA5C700BEB2BB /* AnyCell.swift */,
+				11C620C8202DA52000BEB2BB /* Cell */,
+			);
+			path = TableMVC;
+			sourceTree = "<group>";
+		};
+		11C620C8202DA52000BEB2BB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				11C620C9202DA52000BEB2BB /* Model */,
+				11C620CE202DA52000BEB2BB /* Reusable */,
+				11C620D4202DA52000BEB2BB /* View */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		11C620C9202DA52000BEB2BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11C620CA202DA52000BEB2BB /* BaseCellModel.swift */,
+				11C620CB202DA52000BEB2BB /* CellModelInterface.swift */,
+				11C620CC202DA52000BEB2BB /* DescribeReusable.swift */,
+				11C620CD202DA52000BEB2BB /* HeightConfigurable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11C620CE202DA52000BEB2BB /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				11C620CF202DA52000BEB2BB /* NibLoadable.swift */,
+				11C620D0202DA52000BEB2BB /* NibReusable.swift */,
+				11C620D1202DA52000BEB2BB /* Reusable.swift */,
+				11C620D2202DA52000BEB2BB /* UITableView+Reusable.swift */,
+				11C620D3202DA52000BEB2BB /* UITableViewCell+Reusable.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		11C620D4202DA52000BEB2BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11C620D5202DA52000BEB2BB /* BaseCell.swift */,
+				11C620D6202DA52000BEB2BB /* CellInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5DB17BD7167C723769CE48AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B93ED1445E9998F79CA65219 /* Pods-Souvenir.debug.xcconfig */,
+				97598764451077E0E06AF986 /* Pods-Souvenir.release.xcconfig */,
+				8B763A36689804EA3CCA3037 /* Pods-SouvenirTests.debug.xcconfig */,
+				B3EBC10A8D60CCCE8B684BFF /* Pods-SouvenirTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E83947C8D8867EAF8A3719C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85130997D76FD05291B1B8E8 /* Pods_Souvenir.framework */,
+				541746EFE9B240B5E0CC0A90 /* Pods_SouvenirTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -300,9 +543,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11398FCB201F6FF000792D31 /* Build configuration list for PBXNativeTarget "Souvenir" */;
 			buildPhases = (
+				406867B90CFF825C3C9F8951 /* [CP] Check Pods Manifest.lock */,
 				11398FAA201F6FEF00792D31 /* Sources */,
 				11398FAB201F6FEF00792D31 /* Frameworks */,
 				11398FAC201F6FEF00792D31 /* Resources */,
+				0AFED08753A0F44D6D1E8B9C /* [CP] Embed Pods Frameworks */,
+				8B8116482C9FA02F2386BFA8 /* [CP] Copy Pods Resources */,
+				1113B7C5202C85640072DF49 /* R.swift */,
 			);
 			buildRules = (
 			);
@@ -317,9 +564,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11398FCE201F6FF000792D31 /* Build configuration list for PBXNativeTarget "SouvenirTests" */;
 			buildPhases = (
+				A4BAAA309400E76DA4D8543C /* [CP] Check Pods Manifest.lock */,
 				11398FBE201F6FF000792D31 /* Sources */,
 				11398FBF201F6FF000792D31 /* Frameworks */,
 				11398FC0201F6FF000792D31 /* Resources */,
+				D5C7BA650EC1EBB7A32A99BA /* [CP] Embed Pods Frameworks */,
+				D6DF1CE0223126AB764F3F42 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -379,6 +629,10 @@
 				11633BA7202058DD00E6379F /* SouvenirView.xib in Resources */,
 				11398FBC201F6FF000792D31 /* LaunchScreen.storyboard in Resources */,
 				11633B9120204D8000E6379F /* DIN Pro Condensed Bold.otf in Resources */,
+				1113B7C4202C84DD0072DF49 /* .rswiftignore in Resources */,
+				1113B7C7202C85CD0072DF49 /* CardPicker.storyboard in Resources */,
+				11C620E7202DA8CB00BEB2BB /* AddNewCardCell.xib in Resources */,
+				11F8A59A202DB92E009A364C /* CardCell.xib in Resources */,
 				11398FB9201F6FEF00792D31 /* Assets.xcassets in Resources */,
 				11398FB7201F6FEF00792D31 /* Main.storyboard in Resources */,
 			);
@@ -393,26 +647,171 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AFED08753A0F44D6D1E8B9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Souvenir/Pods-Souvenir-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Souvenir/Pods-Souvenir-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1113B7C5202C85640072DF49 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"$SRCROOT/Souvenir/Resources\"\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Souvenir/Resources\"";
+		};
+		406867B90CFF825C3C9F8951 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Souvenir-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B8116482C9FA02F2386BFA8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Souvenir/Pods-Souvenir-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4BAAA309400E76DA4D8543C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SouvenirTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5C7BA650EC1EBB7A32A99BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SouvenirTests/Pods-SouvenirTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6DF1CE0223126AB764F3F42 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SouvenirTests/Pods-SouvenirTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		11398FAA201F6FEF00792D31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C620DD202DA52000BEB2BB /* Reusable.swift in Sources */,
+				11B3B2DC202E067700054367 /* CardDescription.swift in Sources */,
+				1113B7E1202CAE110072DF49 /* CardPickerView.swift in Sources */,
+				11B3B2E2202E06F900054367 /* TestCardStorage.swift in Sources */,
 				11633BA5202058D200E6379F /* SouvenirView.swift in Sources */,
+				1113B7D6202CA3600072DF49 /* CustomFrameTransitionManager.swift in Sources */,
+				11C620DC202DA52000BEB2BB /* NibReusable.swift in Sources */,
 				1173A9AF20235743000CA598 /* MainView.swift in Sources */,
+				1113B7DC202CADC30072DF49 /* CardPickerViewPresenter.swift in Sources */,
+				11C620D9202DA52000BEB2BB /* DescribeReusable.swift in Sources */,
 				11633BA22020510B00E6379F /* Fonts.swift in Sources */,
 				11398FB4201F6FEF00792D31 /* MainViewController.swift in Sources */,
 				1173A9B12023575B000CA598 /* SouvenirType.swift in Sources */,
+				1113B7CA202C86350072DF49 /* R.generated.swift in Sources */,
+				11C620DA202DA52000BEB2BB /* HeightConfigurable.swift in Sources */,
 				11633B9820204E5200E6379F /* UIImage+Color.swift in Sources */,
+				1113B7D4202C8F9D0072DF49 /* FramePresentationController.swift in Sources */,
 				1173A9B320235773000CA598 /* Currency.swift in Sources */,
+				11B3B2DE202E069900054367 /* CardConst.swift in Sources */,
+				1113B7DF202CADF60072DF49 /* CardPickerModel.swift in Sources */,
+				1113B7C2202C829A0072DF49 /* CardPickerViewController.swift in Sources */,
 				11633B9720204E5200E6379F /* UIColor+Hex.swift in Sources */,
 				11633BA02020509600E6379F /* Colors.swift in Sources */,
+				11C620DE202DA52000BEB2BB /* UITableView+Reusable.swift in Sources */,
 				11633B9D2020504A00E6379F /* UIButton+Style.swift in Sources */,
+				1113B7D2202C8A360072DF49 /* BaseViewController.swift in Sources */,
+				11C620E3202DA5C700BEB2BB /* AnyCell.swift in Sources */,
+				11C620C4202CDC5C00BEB2BB /* CardCell.swift in Sources */,
 				1175E7482020F509003D577E /* EdgeInsetLabel.swift in Sources */,
+				1146639D202A331900C1E2B1 /* CardEditableStorage.swift in Sources */,
+				11B3B2E0202E06CB00054367 /* CardDataStorageDescription.swift in Sources */,
 				1173A9AD20235726000CA598 /* MainModel.swift in Sources */,
+				11C620E5202DA83A00BEB2BB /* AddNewCardCell.swift in Sources */,
+				11C620E0202DA52000BEB2BB /* BaseCell.swift in Sources */,
+				1113B7CD202C878A0072DF49 /* TransitionManager.swift in Sources */,
+				11C620DB202DA52000BEB2BB /* NibLoadable.swift in Sources */,
 				11633BAB2020593A00E6379F /* BaseView.swift in Sources */,
 				11398FB2201F6FEF00792D31 /* AppDelegate.swift in Sources */,
+				11C620D8202DA52000BEB2BB /* CellModelInterface.swift in Sources */,
+				11C620DF202DA52000BEB2BB /* UITableViewCell+Reusable.swift in Sources */,
 				11398FD7201F76A700792D31 /* MainViewPresenter.swift in Sources */,
+				11C620E1202DA52000BEB2BB /* CellInterface.swift in Sources */,
+				11C620D7202DA52000BEB2BB /* BaseCellModel.swift in Sources */,
+				1113B7CF202C88AE0072DF49 /* SlideTransitionAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +962,7 @@
 		};
 		11398FCC201F6FF000792D31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B93ED1445E9998F79CA65219 /* Pods-Souvenir.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -577,6 +977,7 @@
 		};
 		11398FCD201F6FF000792D31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97598764451077E0E06AF986 /* Pods-Souvenir.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -591,6 +992,7 @@
 		};
 		11398FCF201F6FF000792D31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B763A36689804EA3CCA3037 /* Pods-SouvenirTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -607,6 +1009,7 @@
 		};
 		11398FD0201F6FF000792D31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3EBC10A8D60CCCE8B684BFF /* Pods-SouvenirTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

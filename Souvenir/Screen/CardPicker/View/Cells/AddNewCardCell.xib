@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DIN Pro Condensed Bold.otf">
+            <string>DINPro-CondensedBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddNewCardCell" id="He3-Z9-Udf" customClass="AddNewCardCell" customModule="Souvenir" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="He3-Z9-Udf" id="98d-b9-Kq1">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plusIcon" translatesAutoresizingMaskIntoConstraints="NO" id="UpL-Sv-tDc">
+                        <rect key="frame" x="21" y="21" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="AyO-cB-4p1"/>
+                            <constraint firstAttribute="width" constant="14" id="kgc-9w-HU5"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD NEW CARD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sps-Nw-jh2">
+                        <rect key="frame" x="51" y="17.5" width="308" height="21"/>
+                        <fontDescription key="fontDescription" name="DINPro-CondensedBold" family="DIN Pro" pointSize="18"/>
+                        <color key="textColor" red="0.98431372549999996" green="0.0" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Sps-Nw-jh2" firstAttribute="leading" secondItem="UpL-Sv-tDc" secondAttribute="trailing" constant="16" id="RHC-g7-HRT"/>
+                    <constraint firstItem="UpL-Sv-tDc" firstAttribute="centerY" secondItem="98d-b9-Kq1" secondAttribute="centerY" id="dVQ-Ik-JLB"/>
+                    <constraint firstItem="UpL-Sv-tDc" firstAttribute="leading" secondItem="98d-b9-Kq1" secondAttribute="leading" constant="21" id="f5b-6u-bCF"/>
+                    <constraint firstItem="Sps-Nw-jh2" firstAttribute="centerY" secondItem="UpL-Sv-tDc" secondAttribute="centerY" id="gtx-jZ-bRL"/>
+                    <constraint firstAttribute="trailing" secondItem="Sps-Nw-jh2" secondAttribute="trailing" constant="16" id="j5r-kV-5jh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="UpL-Sv-tDc" id="K0m-9Y-aFw"/>
+                <outlet property="titleLabel" destination="Sps-Nw-jh2" id="Xwh-UQ-zuJ"/>
+            </connections>
+            <point key="canvasLocation" x="-126" y="-40"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="plusIcon" width="14" height="14"/>
+    </resources>
+</document>

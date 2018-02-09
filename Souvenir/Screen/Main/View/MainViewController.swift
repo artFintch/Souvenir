@@ -14,7 +14,20 @@ class MainViewController: UIViewController {
     @IBOutlet private weak var pageControl: UIPageControl!
     @IBOutlet private weak var bottomButton: UIButton!
     
-    private let presenter = MainViewPresenter()
+    var presenter: MainViewPresenter? {
+        didSet {
+            setupPresenter()
+        }
+    }
+    
+    private lazy var transitionManager = CustomFrameTransitionManager(
+        presentAnimator: SlideTransitionAnimator(transitionType: .presenting),
+        dismissAnimator: SlideTransitionAnimator(transitionType: .dismissing),
+        contentInsets: .init(top: 0.0,
+                             left: 0.0,
+                             bottom: self.bottomButton.bounds.size.height,
+                             right: 0.0)
+    )
     
     private lazy var leftSwipeGestureRecognizer: UISwipeGestureRecognizer = {
         let gestureRecognizer = UISwipeGestureRecognizer(target: self,
@@ -30,34 +43,40 @@ class MainViewController: UIViewController {
         return gestureRecognizer
     }()
     
+    private func setupPresenter() {
+        guard let presenter = presenter, isViewLoaded else { return }
+        presenter.view = self
+        souvenirView.showSouvenir(presenter.currentSouvenir)
+        pageControl.numberOfPages = presenter.souvenirCount
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        presenter.view = self
-        souvenirView.showSouvenir(presenter.currentSouvenir)
-        pageControl.currentPage = 0
+        setupPresenter()
         
         view.addGestureRecognizer(leftSwipeGestureRecognizer)
         view.addGestureRecognizer(rightSwipeGestureRecognizer)
-        pageControl.numberOfPages = presenter.souvenirCount
+        
         pageControl.pageIndicatorTintColor = Colors.pageCircleColor
         pageControl.currentPageIndicatorTintColor = Colors.selectedPageCircleColor
+        
         bottomButton.applyMainStyle()
     }
     
     @objc private func swipe(_ gestureRecognizer: UISwipeGestureRecognizer) {
         switch gestureRecognizer.direction {
         case .left:
-            presenter.showNextSouvenir()
+            presenter?.showNextSouvenir()
         case .right:
-            presenter.showPreviousSouvenir()
+            presenter?.showPreviousSouvenir()
         default:
             break
         }
     }
     
     @IBAction private func bottomButtonAction() {
-        
+        presenter?.touchBottomButton()
     }
 }
 
@@ -68,8 +87,30 @@ extension MainViewController: MainView {
         bottomButton.setTitle("SEND \(souvenir.description.uppercased())", for: .normal)
     }
     
+    func disableSelectSouvenir() {
+        leftSwipeGestureRecognizer.isEnabled = false
+        rightSwipeGestureRecognizer.isEnabled = false
+    }
+    
     func showCreditCardPicker() {
+        guard let cardPicker = R.storyboard.cardPicker.instantiateInitialViewController() else {
+            // TODO: Log
+            return
+        }
         
+        if let currentSouvenir = presenter?.currentSouvenir {
+            bottomButton.setTitle("PAY \(currentSouvenir.priceDescription)", for: .normal)
+        }
+        
+        cardPicker.modalPresentationStyle = .custom
+        cardPicker.transitioningDelegate = transitionManager
+        cardPicker.presenter = {
+            let dataSource = TestCardStorage()
+            let model = CardPickerModel(dataSource: dataSource)
+            let presenter = CardPickerViewPresenter(model: model)
+            return presenter
+        }()
+        present(cardPicker, animated: true, completion: nil)
     }
     
     func showLoadingIndicator() {

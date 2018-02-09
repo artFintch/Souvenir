@@ -15,6 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions options: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        if let mainViewController = window?.rootViewController as? MainViewController {
+            mainViewController.presenter = MainViewPresenter(model: MainModel())
+        }
         return true
     }
 }

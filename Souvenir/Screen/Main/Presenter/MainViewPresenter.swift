@@ -9,8 +9,12 @@
 import Foundation
 
 class MainViewPresenter {
-    private let model = MainModel()
+    var model: MainModel
     weak var view: MainView?
+    
+    init(model: MainModel) {
+        self.model = model
+    }
     
     // Stripe service
     
@@ -40,9 +44,9 @@ class MainViewPresenter {
         switch model.state {
         case .selectSouvenir:
             model.state = .selectCreditCard
+            view?.disableSelectSouvenir()
             view?.showCreditCardPicker()
         case .selectCreditCard:
-            // pay
             break
         }
     }

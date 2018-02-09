@@ -10,6 +10,7 @@ import Foundation
 
 protocol MainView: class {
     func showSouvenir(_ souvenir: SouvenirType, atIndex index: Int)
+    func disableSelectSouvenir()
     func showCreditCardPicker()
     func showLoadingIndicator()
     func hideLoadingIndicator()
