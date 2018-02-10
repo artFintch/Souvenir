@@ -46,6 +46,10 @@
 		11B3B2DE202E069900054367 /* CardConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2DD202E069900054367 /* CardConst.swift */; };
 		11B3B2E0202E06CB00054367 /* CardDataStorageDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2DF202E06CB00054367 /* CardDataStorageDescription.swift */; };
 		11B3B2E2202E06F900054367 /* TestCardStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2E1202E06F900054367 /* TestCardStorage.swift */; };
+		11B3B2E4202F151400054367 /* CardPickerViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2E3202F151400054367 /* CardPickerViewController+UITableViewDataSource.swift */; };
+		11B3B2E6202F156300054367 /* CardPickerViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2E5202F156300054367 /* CardPickerViewController+UITableViewDelegate.swift */; };
+		11B3B2E8202F158800054367 /* CardPickerViewController+CardPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2E7202F158800054367 /* CardPickerViewController+CardPickerView.swift */; };
+		11B3B2EA202F15D100054367 /* MainViewController+MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2E9202F15D100054367 /* MainViewController+MainView.swift */; };
 		11C620C4202CDC5C00BEB2BB /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620C3202CDC5C00BEB2BB /* CardCell.swift */; };
 		11C620D7202DA52000BEB2BB /* BaseCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620CA202DA52000BEB2BB /* BaseCellModel.swift */; };
 		11C620D8202DA52000BEB2BB /* CellModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620CB202DA52000BEB2BB /* CellModelInterface.swift */; };
@@ -118,6 +122,10 @@
 		11B3B2DD202E069900054367 /* CardConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardConst.swift; sourceTree = "<group>"; };
 		11B3B2DF202E06CB00054367 /* CardDataStorageDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDataStorageDescription.swift; sourceTree = "<group>"; };
 		11B3B2E1202E06F900054367 /* TestCardStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCardStorage.swift; sourceTree = "<group>"; };
+		11B3B2E3202F151400054367 /* CardPickerViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardPickerViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		11B3B2E5202F156300054367 /* CardPickerViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardPickerViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		11B3B2E7202F158800054367 /* CardPickerViewController+CardPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardPickerViewController+CardPickerView.swift"; sourceTree = "<group>"; };
+		11B3B2E9202F15D100054367 /* MainViewController+MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+MainView.swift"; sourceTree = "<group>"; };
 		11C620C3202CDC5C00BEB2BB /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		11C620CA202DA52000BEB2BB /* BaseCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCellModel.swift; sourceTree = "<group>"; };
 		11C620CB202DA52000BEB2BB /* CellModelInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModelInterface.swift; sourceTree = "<group>"; };
@@ -203,6 +211,9 @@
 			children = (
 				11C620C2202CDC1100BEB2BB /* Cells */,
 				1113B7C1202C829A0072DF49 /* CardPickerViewController.swift */,
+				11B3B2E3202F151400054367 /* CardPickerViewController+UITableViewDataSource.swift */,
+				11B3B2E5202F156300054367 /* CardPickerViewController+UITableViewDelegate.swift */,
+				11B3B2E7202F158800054367 /* CardPickerViewController+CardPickerView.swift */,
 				1113B7C6202C85CD0072DF49 /* CardPicker.storyboard */,
 			);
 			path = View;
@@ -279,7 +290,6 @@
 				11C620C7202DA51300BEB2BB /* TableMVC */,
 				1113B7CB202C87790072DF49 /* Transitions */,
 				11633BA3202058C000E6379F /* SouvenirView */,
-				11398FB5201F6FEF00792D31 /* Main.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -297,6 +307,8 @@
 			isa = PBXGroup;
 			children = (
 				11398FB3201F6FEF00792D31 /* MainViewController.swift */,
+				11B3B2E9202F15D100054367 /* MainViewController+MainView.swift */,
+				11398FB5201F6FEF00792D31 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -778,20 +790,24 @@
 				1173A9AF20235743000CA598 /* MainView.swift in Sources */,
 				1113B7DC202CADC30072DF49 /* CardPickerViewPresenter.swift in Sources */,
 				11C620D9202DA52000BEB2BB /* DescribeReusable.swift in Sources */,
+				11B3B2E4202F151400054367 /* CardPickerViewController+UITableViewDataSource.swift in Sources */,
 				11633BA22020510B00E6379F /* Fonts.swift in Sources */,
 				11398FB4201F6FEF00792D31 /* MainViewController.swift in Sources */,
 				1173A9B12023575B000CA598 /* SouvenirType.swift in Sources */,
 				1113B7CA202C86350072DF49 /* R.generated.swift in Sources */,
 				11C620DA202DA52000BEB2BB /* HeightConfigurable.swift in Sources */,
 				11633B9820204E5200E6379F /* UIImage+Color.swift in Sources */,
+				11B3B2EA202F15D100054367 /* MainViewController+MainView.swift in Sources */,
 				1113B7D4202C8F9D0072DF49 /* FramePresentationController.swift in Sources */,
 				1173A9B320235773000CA598 /* Currency.swift in Sources */,
 				11B3B2DE202E069900054367 /* CardConst.swift in Sources */,
 				1113B7DF202CADF60072DF49 /* CardPickerModel.swift in Sources */,
 				1113B7C2202C829A0072DF49 /* CardPickerViewController.swift in Sources */,
+				11B3B2E8202F158800054367 /* CardPickerViewController+CardPickerView.swift in Sources */,
 				11633B9720204E5200E6379F /* UIColor+Hex.swift in Sources */,
 				11633BA02020509600E6379F /* Colors.swift in Sources */,
 				11C620DE202DA52000BEB2BB /* UITableView+Reusable.swift in Sources */,
+				11B3B2E6202F156300054367 /* CardPickerViewController+UITableViewDelegate.swift in Sources */,
 				11633B9D2020504A00E6379F /* UIButton+Style.swift in Sources */,
 				1113B7D2202C8A360072DF49 /* BaseViewController.swift in Sources */,
 				11C620E3202DA5C700BEB2BB /* AnyCell.swift in Sources */,
