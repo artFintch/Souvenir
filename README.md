@@ -1,4 +1,9 @@
 # Souvenir
+
+![Animations](https://media.giphy.com/media/xThtabA1tDfnP9K1Jm/giphy.gif)
+![Stripe](https://media.giphy.com/media/xUOwG5LxksHbKgQsQo/giphy.gif)
+![Pay](https://media.giphy.com/media/3o7WIq46HWgJ5bdMT6/giphy.gif)
+
 Тестовое задание. План:
 - [x] Главный экран, анимация;
 - [x] Меню выбора карты;
