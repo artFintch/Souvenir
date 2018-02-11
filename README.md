@@ -13,7 +13,7 @@
 - [x] Использование Stripe;
 - [ ] Тесты, рефакторинг.
 
-Для использования Stipe необходимо реализовать расширение:
+Для использования Stripe необходимо реализовать расширение:
 ```swift
 extension AppConfig {
     var stripePublishableKey: String {
