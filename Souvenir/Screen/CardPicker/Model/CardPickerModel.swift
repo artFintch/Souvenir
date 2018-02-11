@@ -12,15 +12,20 @@ class CardPickerModel {
     let dataSource: CardDataSource
     
     var isFold = true
-    var selectedCardIndex: Int?
+    var selectedCardIndex: Int? {
+        get {
+            return dataSource.defaultCardIndex
+        }
+        set {
+            dataSource.defaultCardIndex = newValue
+        }
+    }
     
-    var selectedCard: CardConst? {
-        guard let index = selectedCardIndex, dataSource.cards.count > index else { return nil }
-        return dataSource.cards[index]
+    var selectedCard: Card? {
+        return dataSource.selectedCard
     }
     
     init(dataSource: CardDataSource) {
         self.dataSource = dataSource
-        self.selectedCardIndex = dataSource.defaultCardIndex
     }
 }

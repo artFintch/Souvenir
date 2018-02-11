@@ -8,11 +8,8 @@
 
 import Foundation
 
-protocol CardDataSource {
-    var cards: [CardConst] { get }
-    var defaultCardIndex: Int? { get }
-}
-
-protocol EditableCardDataSource: CardDataSource {
-    func addNewCard(_ card: CardConst)
+protocol CardDataSource: class {
+    var cards: [Card] { get set }
+    var defaultCardIndex: Int? { get set }
+    var selectedCard: Card? { get }
 }

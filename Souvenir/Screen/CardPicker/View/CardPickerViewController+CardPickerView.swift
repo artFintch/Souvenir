@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Stripe
 
 extension CardPickerViewController: CardPickerView {
     func fold() {
@@ -53,6 +54,28 @@ extension CardPickerViewController: CardPickerView {
     }
     
     func addNewCard() {
-        
+        presenter?.stripeManager.paymentContext?.presentPaymentMethodsViewController()
+    }
+    
+    func update() {
+        tableView.reloadData()
+    }
+    
+    func showLoadingIndicator() {
+        beginLoad()
+        presentingViewController?.view.isUserInteractionEnabled = false
+    }
+    
+    func hideLoadingIndicator() {
+        endLoad()
+        presentingViewController?.view.isUserInteractionEnabled = true
+    }
+    
+    func showAlert(withError error: Error) {
+        let alertController = UIAlertController(title: "Error",
+                                                message: error.localizedDescription,
+                                                preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alertController, animated: true, completion: nil)
     }
 }

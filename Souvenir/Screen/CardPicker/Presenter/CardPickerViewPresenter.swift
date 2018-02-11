@@ -9,7 +9,8 @@
 import Foundation
 
 class CardPickerViewPresenter {
-    var model: CardPickerModel
+    let model: CardPickerModel
+    let stripeManager: StripeManager
     weak var view: CardPickerView?
     
     var isFold: Bool {
@@ -19,6 +20,24 @@ class CardPickerViewPresenter {
     var selectedCardIndex: Int? {
         guard let index = model.selectedCardIndex else { return nil }
         return index + 1
+    }
+    
+    func update() {        
+        view?.showLoadingIndicator()
+        stripeManager.getCards { [weak self] response in
+            guard let `self` = self else { return }
+            
+            self.view?.hideLoadingIndicator()
+            switch response {
+            case .success(let cards, let defaultSourceIndex):
+                self.model.dataSource.cards = cards
+                self.model.dataSource.defaultCardIndex = defaultSourceIndex
+                self.prepareCells()
+                self.view?.update()
+            case .failure(let erorr):
+                self.view?.showAlert(withError: erorr)
+            }
+        }
     }
     
     func handleRow(at index: IndexPath) {
@@ -100,8 +119,9 @@ class CardPickerViewPresenter {
         return model.dataSource.cards.count
     }
     
-    init(model: CardPickerModel) {
+    init(model: CardPickerModel, stripeManager: StripeManager) {
         self.model = model
+        self.stripeManager = stripeManager
         prepareCells()
     }
 }

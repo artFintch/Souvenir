@@ -27,7 +27,6 @@
 		11398FBC201F6FF000792D31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11398FBA201F6FF000792D31 /* LaunchScreen.storyboard */; };
 		11398FC7201F6FF000792D31 /* SouvenirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11398FC6201F6FF000792D31 /* SouvenirTests.swift */; };
 		11398FD7201F76A700792D31 /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11398FD6201F76A700792D31 /* MainViewPresenter.swift */; };
-		1146639D202A331900C1E2B1 /* CardEditableStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146639C202A331900C1E2B1 /* CardEditableStorage.swift */; };
 		11633B9120204D8000E6379F /* DIN Pro Condensed Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 11633B9020204D8000E6379F /* DIN Pro Condensed Bold.otf */; };
 		11633B9720204E5200E6379F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11633B9420204E5200E6379F /* UIColor+Hex.swift */; };
 		11633B9820204E5200E6379F /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11633B9620204E5200E6379F /* UIImage+Color.swift */; };
@@ -42,14 +41,20 @@
 		1173A9B12023575B000CA598 /* SouvenirType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1173A9B02023575B000CA598 /* SouvenirType.swift */; };
 		1173A9B320235773000CA598 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1173A9B220235773000CA598 /* Currency.swift */; };
 		1175E7482020F509003D577E /* EdgeInsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1175E7472020F509003D577E /* EdgeInsetLabel.swift */; };
+		11882D52203029F10052A12C /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11882D51203029F10052A12C /* AppConfig.swift */; };
+		11882D5420302A470052A12C /* AppConfig+StripeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11882D5320302A470052A12C /* AppConfig+StripeConfig.swift */; };
+		119334E5203073C500B3CAEE /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119334E4203073C500B3CAEE /* LoaderViewController.swift */; };
+		119334E720307BC900B3CAEE /* CardStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119334E620307BC900B3CAEE /* CardStorage.swift */; };
+		119334E9203080CB00B3CAEE /* StripeStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119334E8203080CB00B3CAEE /* StripeStorage.swift */; };
 		11B3B2DC202E067700054367 /* CardDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2DB202E067700054367 /* CardDescription.swift */; };
-		11B3B2DE202E069900054367 /* CardConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2DD202E069900054367 /* CardConst.swift */; };
 		11B3B2E0202E06CB00054367 /* CardDataStorageDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2DF202E06CB00054367 /* CardDataStorageDescription.swift */; };
-		11B3B2E2202E06F900054367 /* TestCardStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2E1202E06F900054367 /* TestCardStorage.swift */; };
 		11B3B2E4202F151400054367 /* CardPickerViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2E3202F151400054367 /* CardPickerViewController+UITableViewDataSource.swift */; };
 		11B3B2E6202F156300054367 /* CardPickerViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2E5202F156300054367 /* CardPickerViewController+UITableViewDelegate.swift */; };
 		11B3B2E8202F158800054367 /* CardPickerViewController+CardPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2E7202F158800054367 /* CardPickerViewController+CardPickerView.swift */; };
 		11B3B2EA202F15D100054367 /* MainViewController+MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2E9202F15D100054367 /* MainViewController+MainView.swift */; };
+		11B3B2F0202F18F100054367 /* AddNewCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B3B2EF202F18F100054367 /* AddNewCard.storyboard */; };
+		11B3B2F2202F190900054367 /* AddNewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2F1202F190900054367 /* AddNewCardViewController.swift */; };
+		11B3B2F5202F3D1A00054367 /* StripeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B2F4202F3D1A00054367 /* StripeManager.swift */; };
 		11C620C4202CDC5C00BEB2BB /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620C3202CDC5C00BEB2BB /* CardCell.swift */; };
 		11C620D7202DA52000BEB2BB /* BaseCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620CA202DA52000BEB2BB /* BaseCellModel.swift */; };
 		11C620D8202DA52000BEB2BB /* CellModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C620CB202DA52000BEB2BB /* CellModelInterface.swift */; };
@@ -103,7 +108,6 @@
 		11398FC6201F6FF000792D31 /* SouvenirTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouvenirTests.swift; sourceTree = "<group>"; };
 		11398FC8201F6FF000792D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11398FD6201F76A700792D31 /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
-		1146639C202A331900C1E2B1 /* CardEditableStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEditableStorage.swift; sourceTree = "<group>"; };
 		11633B9020204D8000E6379F /* DIN Pro Condensed Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN Pro Condensed Bold.otf"; sourceTree = "<group>"; };
 		11633B9420204E5200E6379F /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		11633B9620204E5200E6379F /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
@@ -118,14 +122,20 @@
 		1173A9B02023575B000CA598 /* SouvenirType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouvenirType.swift; sourceTree = "<group>"; };
 		1173A9B220235773000CA598 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		1175E7472020F509003D577E /* EdgeInsetLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInsetLabel.swift; sourceTree = "<group>"; };
+		11882D51203029F10052A12C /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		11882D5320302A470052A12C /* AppConfig+StripeConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppConfig+StripeConfig.swift"; sourceTree = "<group>"; };
+		119334E4203073C500B3CAEE /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
+		119334E620307BC900B3CAEE /* CardStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStorage.swift; sourceTree = "<group>"; };
+		119334E8203080CB00B3CAEE /* StripeStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeStorage.swift; sourceTree = "<group>"; };
 		11B3B2DB202E067700054367 /* CardDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDescription.swift; sourceTree = "<group>"; };
-		11B3B2DD202E069900054367 /* CardConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardConst.swift; sourceTree = "<group>"; };
 		11B3B2DF202E06CB00054367 /* CardDataStorageDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDataStorageDescription.swift; sourceTree = "<group>"; };
-		11B3B2E1202E06F900054367 /* TestCardStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCardStorage.swift; sourceTree = "<group>"; };
 		11B3B2E3202F151400054367 /* CardPickerViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardPickerViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		11B3B2E5202F156300054367 /* CardPickerViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardPickerViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		11B3B2E7202F158800054367 /* CardPickerViewController+CardPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardPickerViewController+CardPickerView.swift"; sourceTree = "<group>"; };
 		11B3B2E9202F15D100054367 /* MainViewController+MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+MainView.swift"; sourceTree = "<group>"; };
+		11B3B2EF202F18F100054367 /* AddNewCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNewCard.storyboard; sourceTree = "<group>"; };
+		11B3B2F1202F190900054367 /* AddNewCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCardViewController.swift; sourceTree = "<group>"; };
+		11B3B2F4202F3D1A00054367 /* StripeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeManager.swift; sourceTree = "<group>"; };
 		11C620C3202CDC5C00BEB2BB /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		11C620CA202DA52000BEB2BB /* BaseCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCellModel.swift; sourceTree = "<group>"; };
 		11C620CB202DA52000BEB2BB /* CellModelInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModelInterface.swift; sourceTree = "<group>"; };
@@ -193,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				1113B7D1202C8A360072DF49 /* BaseViewController.swift */,
+				119334E4203073C500B3CAEE /* LoaderViewController.swift */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -252,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				11633B9E2020508B00E6379F /* General */,
+				11B3B2F3202F3D0D00054367 /* Network */,
 				1146639B202A330500C1E2B1 /* Storage */,
 				11398FD3201F765B00792D31 /* Screen */,
 				11398FD2201F70EB00792D31 /* UI */,
@@ -299,6 +311,7 @@
 			children = (
 				11398FD8201F76AA00792D31 /* Main */,
 				1146639E202A39A200C1E2B1 /* CardPicker */,
+				11B3B2EB202F185100054367 /* AddNewCard */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -336,10 +349,9 @@
 			isa = PBXGroup;
 			children = (
 				11B3B2DB202E067700054367 /* CardDescription.swift */,
-				11B3B2DD202E069900054367 /* CardConst.swift */,
 				11B3B2DF202E06CB00054367 /* CardDataStorageDescription.swift */,
-				1146639C202A331900C1E2B1 /* CardEditableStorage.swift */,
-				11B3B2E1202E06F900054367 /* TestCardStorage.swift */,
+				119334E620307BC900B3CAEE /* CardStorage.swift */,
+				119334E8203080CB00B3CAEE /* StripeStorage.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -417,6 +429,8 @@
 			children = (
 				11633B9F2020509600E6379F /* Colors.swift */,
 				11633BA12020510B00E6379F /* Fonts.swift */,
+				11882D51203029F10052A12C /* AppConfig.swift */,
+				11882D5320302A470052A12C /* AppConfig+StripeConfig.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -464,6 +478,47 @@
 				1175E7472020F509003D577E /* EdgeInsetLabel.swift */,
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		11B3B2EB202F185100054367 /* AddNewCard */ = {
+			isa = PBXGroup;
+			children = (
+				11B3B2EC202F186400054367 /* Model */,
+				11B3B2ED202F186900054367 /* Presenter */,
+				11B3B2EE202F187000054367 /* View */,
+			);
+			path = AddNewCard;
+			sourceTree = "<group>";
+		};
+		11B3B2EC202F186400054367 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11B3B2ED202F186900054367 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		11B3B2EE202F187000054367 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11B3B2F1202F190900054367 /* AddNewCardViewController.swift */,
+				11B3B2EF202F18F100054367 /* AddNewCard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11B3B2F3202F3D0D00054367 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				11B3B2F4202F3D1A00054367 /* StripeManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		11C620C2202CDC1100BEB2BB /* Cells */ = {
@@ -639,6 +694,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11633BA7202058DD00E6379F /* SouvenirView.xib in Resources */,
+				11B3B2F0202F18F100054367 /* AddNewCard.storyboard in Resources */,
 				11398FBC201F6FF000792D31 /* LaunchScreen.storyboard in Resources */,
 				11633B9120204D8000E6379F /* DIN Pro Condensed Bold.otf in Resources */,
 				1113B7C4202C84DD0072DF49 /* .rswiftignore in Resources */,
@@ -667,11 +723,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Souvenir/Pods-Souvenir-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Locksmith.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -780,10 +842,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B3B2F5202F3D1A00054367 /* StripeManager.swift in Sources */,
 				11C620DD202DA52000BEB2BB /* Reusable.swift in Sources */,
 				11B3B2DC202E067700054367 /* CardDescription.swift in Sources */,
 				1113B7E1202CAE110072DF49 /* CardPickerView.swift in Sources */,
-				11B3B2E2202E06F900054367 /* TestCardStorage.swift in Sources */,
+				119334E5203073C500B3CAEE /* LoaderViewController.swift in Sources */,
 				11633BA5202058D200E6379F /* SouvenirView.swift in Sources */,
 				1113B7D6202CA3600072DF49 /* CustomFrameTransitionManager.swift in Sources */,
 				11C620DC202DA52000BEB2BB /* NibReusable.swift in Sources */,
@@ -792,6 +855,7 @@
 				11C620D9202DA52000BEB2BB /* DescribeReusable.swift in Sources */,
 				11B3B2E4202F151400054367 /* CardPickerViewController+UITableViewDataSource.swift in Sources */,
 				11633BA22020510B00E6379F /* Fonts.swift in Sources */,
+				119334E720307BC900B3CAEE /* CardStorage.swift in Sources */,
 				11398FB4201F6FEF00792D31 /* MainViewController.swift in Sources */,
 				1173A9B12023575B000CA598 /* SouvenirType.swift in Sources */,
 				1113B7CA202C86350072DF49 /* R.generated.swift in Sources */,
@@ -800,20 +864,21 @@
 				11B3B2EA202F15D100054367 /* MainViewController+MainView.swift in Sources */,
 				1113B7D4202C8F9D0072DF49 /* FramePresentationController.swift in Sources */,
 				1173A9B320235773000CA598 /* Currency.swift in Sources */,
-				11B3B2DE202E069900054367 /* CardConst.swift in Sources */,
 				1113B7DF202CADF60072DF49 /* CardPickerModel.swift in Sources */,
 				1113B7C2202C829A0072DF49 /* CardPickerViewController.swift in Sources */,
 				11B3B2E8202F158800054367 /* CardPickerViewController+CardPickerView.swift in Sources */,
 				11633B9720204E5200E6379F /* UIColor+Hex.swift in Sources */,
 				11633BA02020509600E6379F /* Colors.swift in Sources */,
+				11882D52203029F10052A12C /* AppConfig.swift in Sources */,
 				11C620DE202DA52000BEB2BB /* UITableView+Reusable.swift in Sources */,
 				11B3B2E6202F156300054367 /* CardPickerViewController+UITableViewDelegate.swift in Sources */,
 				11633B9D2020504A00E6379F /* UIButton+Style.swift in Sources */,
+				11B3B2F2202F190900054367 /* AddNewCardViewController.swift in Sources */,
 				1113B7D2202C8A360072DF49 /* BaseViewController.swift in Sources */,
 				11C620E3202DA5C700BEB2BB /* AnyCell.swift in Sources */,
 				11C620C4202CDC5C00BEB2BB /* CardCell.swift in Sources */,
 				1175E7482020F509003D577E /* EdgeInsetLabel.swift in Sources */,
-				1146639D202A331900C1E2B1 /* CardEditableStorage.swift in Sources */,
+				119334E9203080CB00B3CAEE /* StripeStorage.swift in Sources */,
 				11B3B2E0202E06CB00054367 /* CardDataStorageDescription.swift in Sources */,
 				1173A9AD20235726000CA598 /* MainModel.swift in Sources */,
 				11C620E5202DA83A00BEB2BB /* AddNewCardCell.swift in Sources */,
@@ -823,6 +888,7 @@
 				11633BAB2020593A00E6379F /* BaseView.swift in Sources */,
 				11398FB2201F6FEF00792D31 /* AppDelegate.swift in Sources */,
 				11C620D8202DA52000BEB2BB /* CellModelInterface.swift in Sources */,
+				11882D5420302A470052A12C /* AppConfig+StripeConfig.swift in Sources */,
 				11C620DF202DA52000BEB2BB /* UITableViewCell+Reusable.swift in Sources */,
 				11398FD7201F76A700792D31 /* MainViewPresenter.swift in Sources */,
 				11C620E1202DA52000BEB2BB /* CellInterface.swift in Sources */,

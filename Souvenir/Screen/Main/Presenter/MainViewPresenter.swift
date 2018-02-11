@@ -9,14 +9,18 @@
 import Foundation
 
 class MainViewPresenter {
-    var model: MainModel
+    private let model: MainModel
+    let cardDataSource: CardDataSource
+    let stripeManager: StripeManager
     weak var view: MainView?
-    
-    init(model: MainModel) {
+        
+    init(model: MainModel,
+         cardDataSource: CardDataSource,
+         stripeManager: StripeManager) {
         self.model = model
+        self.cardDataSource = cardDataSource
+        self.stripeManager = stripeManager
     }
-    
-    // Stripe service
     
     var currentSouvenir: SouvenirType {
         return model.selectedSouvenir
@@ -40,6 +44,27 @@ class MainViewPresenter {
         }
     }
     
+    func prepareServices() {
+        view?.showLoadingIndicator()
+        stripeManager.tryRetrieveCustomer { [weak self] error in
+            guard let `self` = self else { return }
+            
+            // Silent handle error
+            if let error = error {
+                print(error)
+            }
+            
+            self.getCards(completion: { [weak self] error in
+                guard let `self` = self else { return }
+                
+                self.view?.hideLoadingIndicator()
+                if let error = error {
+                    self.view?.showAlert(withError: error)
+                }
+            })
+        }
+    }
+    
     func touchBottomButton() {
         switch model.state {
         case .selectSouvenir:
@@ -47,7 +72,36 @@ class MainViewPresenter {
             view?.disableSelectSouvenir()
             view?.showCreditCardPicker()
         case .selectCreditCard:
-            break
+            guard let card = cardDataSource.selectedCard else {
+                // TODO: Handle
+                return
+            }
+            
+            self.view?.showLoadingIndicator()
+            let price = model.selectedSouvenir.price * 100
+            stripeManager.pay(card: card, price: price, completion: { [weak self] error in
+                guard let `self` = self else { return }
+                
+                self.view?.hideLoadingIndicator()
+                if let error = error {
+                    self.view?.showAlert(withError: error)
+                } else {
+                    self.view?.successPay()
+                }
+            })
         }
+    }
+    
+    private func getCards(completion: @escaping (Error?) -> Void) {
+        stripeManager.getCards(completion: { [weak self] response in
+            switch response {
+            case .success(let cards, let index):
+                self?.cardDataSource.cards = cards
+                self?.cardDataSource.defaultCardIndex = index
+                completion(nil)
+            case .failure(let error):
+                completion(error)
+            }
+        })
     }
 }

@@ -15,9 +15,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions options: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        if let mainViewController = window?.rootViewController as? MainViewController {
-            mainViewController.presenter = MainViewPresenter(model: MainModel())
+        guard let mainViewController = window?.rootViewController as? MainViewController else {
+            fatalError()
         }
+        
+        let model = MainModel()
+        let stripeStorage = StripeStorage()
+        let stripeManager = StripeManager(stripeConfig: AppConfig.shared,
+                                          customerInfo: stripeStorage)
+        let cardStorage = CardStorage()
+        mainViewController.presenter = MainViewPresenter(model: model,
+                                                         cardDataSource: cardStorage,
+                                                         stripeManager: stripeManager)
+        
         return true
     }
 }

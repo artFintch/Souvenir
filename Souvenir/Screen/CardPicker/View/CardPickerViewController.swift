@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CardPickerViewController: BaseViewController {
+class CardPickerViewController: LoaderViewController {
     @IBOutlet private(set) var dimBackground: UIView!
     @IBOutlet private(set) var tableView: UITableView!
     
@@ -21,10 +21,12 @@ class CardPickerViewController: BaseViewController {
     private func setupPresenter() {
         guard let presenter = presenter, isViewLoaded else { return }
         presenter.view = self
+        presenter.stripeManager.paymentContext?.hostViewController = self
     }
     
     let checkmarkIcon = UIImageView(image: #imageLiteral(resourceName: "checkmarkIcon"))
     let foldedPickerIcon = UIImageView(image: #imageLiteral(resourceName: "foldedPickerIcon"))
+    private var needUpdate = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +43,17 @@ class CardPickerViewController: BaseViewController {
         tableView.register(type: AddNewCardCell.self)
         tableView.register(type: CardCell.self)
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        needUpdate = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if needUpdate {
+            presenter?.update()
+            needUpdate = false
+        }
+    }
 }
-
-

@@ -4,6 +4,9 @@ inhibit_all_warnings!
 
 target 'Souvenir' do
   pod 'R.swift'
+  pod 'Stripe'
+  pod 'Alamofire'
+  pod 'Locksmith'
 
   target 'SouvenirTests' do
     inherit! :search_paths

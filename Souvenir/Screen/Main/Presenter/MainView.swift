@@ -14,5 +14,6 @@ protocol MainView: class {
     func showCreditCardPicker()
     func showLoadingIndicator()
     func hideLoadingIndicator()
+    func successPay()
     func showAlert(withError error: Error)
 }

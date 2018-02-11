@@ -8,8 +8,8 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
-    @IBOutlet private weak var backgroundImageView: UIImageView!
+class MainViewController: LoaderViewController {
+    @IBOutlet private(set) weak var backgroundImageView: UIImageView!
     @IBOutlet private(set) weak var souvenirView: SouvenirView!
     @IBOutlet private(set) weak var pageControl: UIPageControl!
     @IBOutlet private(set) weak var bottomButton: UIButton!
@@ -50,6 +50,10 @@ class MainViewController: UIViewController {
         pageControl.numberOfPages = presenter.souvenirCount
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -62,6 +66,11 @@ class MainViewController: UIViewController {
         pageControl.currentPageIndicatorTintColor = Colors.selectedPageCircleColor
         
         bottomButton.applyMainStyle()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter?.prepareServices()
     }
     
     @objc private func swipe(_ gestureRecognizer: UISwipeGestureRecognizer) {

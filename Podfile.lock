@@ -1,15 +1,24 @@
 PODS:
+  - Alamofire (4.6.0)
+  - Locksmith (4.0.0)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
+  - Stripe (11.5.0)
 
 DEPENDENCIES:
+  - Alamofire
+  - Locksmith
   - R.swift
+  - Stripe
 
 SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Locksmith: e9bebbaaa4cee3c511bc358a44f843c3fe00e21f
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  Stripe: 10761682d20dc491c52287393c800db056c9748d
 
-PODFILE CHECKSUM: d042416727449c8b7a647379f1c4045badad5187
+PODFILE CHECKSUM: d4849339806dedb8cf999026b9fd74377c79484e
 
 COCOAPODS: 1.3.1

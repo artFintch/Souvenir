@@ -15,4 +15,8 @@ protocol CardPickerView: class {
     func insertRows(at indexes: [IndexPath])
     func deleteRows(at indexes: [IndexPath])
     func addNewCard()
+    func update()
+    func showLoadingIndicator()
+    func hideLoadingIndicator()
+    func showAlert(withError error: Error)
 }

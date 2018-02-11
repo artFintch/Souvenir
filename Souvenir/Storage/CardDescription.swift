@@ -7,20 +7,20 @@
 //
 
 import UIKit
+import Stripe
 
 enum CardType: String {
     case visa
     case masterCard
-}
-
-protocol StandardCard {
-    var type: CardType { get }
-    var number: String { get }
-    var holder: String { get }
-    var expiry: String { get }
-}
-
-protocol CardDisplayable {
-    var icon: UIImage { get }
-    var protectedNumber: String { get }
+    
+    init?(brand: STPCardBrand?) {
+        switch brand {
+        case .visa?:
+            self = .visa
+        case .masterCard?:
+            self = .masterCard
+        default:
+            return nil
+        }
+    }
 }

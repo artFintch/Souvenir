@@ -81,14 +81,21 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 3 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 4 storyboards.
   struct storyboard {
+    /// Storyboard `AddNewCard`.
+    static let addNewCard = _R.storyboard.addNewCard()
     /// Storyboard `CardPicker`.
     static let cardPicker = _R.storyboard.cardPicker()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `Main`.
     static let main = _R.storyboard.main()
+    
+    /// `UIStoryboard(name: "AddNewCard", bundle: ...)`
+    static func addNewCard(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.addNewCard)
+    }
     
     /// `UIStoryboard(name: "CardPicker", bundle: ...)`
     static func cardPicker(_: Void = ()) -> UIKit.UIStoryboard {
@@ -139,6 +146,15 @@ struct _R: Rswift.Validatable {
     static func validate() throws {
       try main.validate()
       try launchScreen.validate()
+    }
+    
+    struct addNewCard: Rswift.StoryboardResourceWithInitialControllerType {
+      typealias InitialController = AddNewCardViewController
+      
+      let bundle = R.hostingBundle
+      let name = "AddNewCard"
+      
+      fileprivate init() {}
     }
     
     struct cardPicker: Rswift.StoryboardResourceWithInitialControllerType {
